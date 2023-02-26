@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<link href="css/if.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+<h1>Some Memorable Movies</h1>
+
+<h3><span class="ital">See You Later</span> (Christian Ranicke, 2022)</h3>
+<div class="sideBySide">
+<img class="filmstill" onClick="onClick_GWH_img01()" src="images/SYL_img01.jpg" alt="See You Later">
+<img class="filmstill" onClick="onClick_GWH_img02()" src="images/SYL_img02.jpg" alt="See You Later">
+<img class="filmstill" onClick="onClick_GWH_img03()" src="images/SYL_img03.jpg" alt="See You Later">
+</div>
+<p class="filmInfo" id="GWH_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum doloremque itaque iure veniam tempora illum inventore voluptate adipisci possimus esse dolor natus expedita harum, libero, distinctio iste laborum exercitationem ipsam et temporibus id repellat. Molestiae recusandae voluptate tenetur doloribus excepturi aperiam, libero, itaque sint eius in iste, aliquam vitae repudiandae.</p>
+
+<button type="button" onClick="gotoMovie()" id="gotoMovie_btn">Watch "See You Later" now!</button>
+	
+</body>
+<script>
+	
+	var gotoMovie_btn = document.getElementById("gotoMovie_btn");
+	gotoMovie_btn.style.visibility = "hidden";
+	
+	var img01_clicked = false;
+	var img02_clicked = false;
+	var img03_clicked = false;
+	
+	var GWH_text = document.getElementById("GWH_text");
+	
+	var GWH00 = "See You Later is a short film that I created in my second semester as a film student at UWM. It is a story about me, essentially, but probably about you, too. It is about a videographer who becomes so indulged in his work that he makes no time for what is truly important in life. It is not my best storytelling, but it is some of my proudest cinematography.";
+
+	var GWH01 = "This is my friend Ethan, who we creatively named Ethan as the character in the film. Ethan is an old friend of mine from high school who committed a lot of time to the creation of this film. Being that there was really nothing in it for Ethan to be in my film, I am very thankful for his patience and cheerfulness throughout the process. I paid him with cake."
+	
+	var GWH02 = "Ethan's character quickly becomes overloaded with the work it takes to become a freelance videographer and, like many of us before, distances himself from those closest to him. His journey comes to a point where he realizes how terrible of a friend he has been and must decide if his career is really worth the price he has been paying."
+	
+	var GWH03 = "This shot is one of my favorites because of the golden sun beaming through the blinds and onto the bright, colorful wrapping paper. The lighting in this shot worked out beautifully in the film because it is the first sign of hope for Ethan. In his loneliest moments preceding this shot, the lighting is dark. The lighting brightens as Ethan begins to make an effort to restore what's most important in life: friendship."
+	
+	GWH_text.innerHTML = GWH00;
+
+	function onClick_GWH_img01(){
+		GWH_text.innerHTML = GWH01;
+		img01_clicked = true;
+		console.log("img01_clicked = " + img01_clicked);
+		revealButton();
+	}
+	
+	function onClick_GWH_img02(){
+		GWH_text.innerHTML = GWH02;
+		img02_clicked = true;
+		console.log("img02_clicked = " + img02_clicked);
+		revealButton();
+	}
+	
+	function onClick_GWH_img03(){
+		GWH_text.innerHTML = GWH03;
+		img03_clicked = true;
+		console.log("img03_clicked = " + img03_clicked);
+		revealButton();
+	}
+	
+	function revealButton(){
+		if (img01_clicked && img02_clicked && img03_clicked){
+			console.log("REVEAL BUTTON");
+			gotoMovie_btn.style.visibility = "visible";
+		}
+	}
+	
+	function gotoMovie(){
+		window.open("https://www.youtube.com/watch?v=pLAvY6QfTTE", "_blank");
+	}
+
+</script>
+</html>
