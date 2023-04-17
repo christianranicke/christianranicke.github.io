@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>How Movies Make Us Feel</title>
+<link href="css/collections.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	
+
+
+<div class="sideBySide">
+  <video id="leftVideo" onClick="onClick_crying_vid01()" preload="auto" muted="muted" autoplay="autoplay" loop="loop" >
+    <source src="videos/frodoSam.mp4" type="video/mp4">
+  </video>
+  <video id="middleVideo" onClick="onClick_crying_vid02()" preload="auto" muted="muted" autoplay="autoplay" loop="loop" >
+    <source src="videos/notYourFault.mp4" type="video/mp4">
+  </video>
+  <video id="rightVideo" onClick="onClick_crying_vid03()" preload="auto" muted="muted" autoplay="autoplay" loop="loop" >
+    <source src="videos/thomasDies.mp4" type="video/mp4">
+  </video> 
+	</div>
+	
+<div class="sideBySide">
+  <video id="rowTwoleftVideo" onClick="onClick_crying_vid04()" preload="auto" muted="muted" autoplay="autoplay" loop="loop" >
+    <source src="videos/wearOneTomorrow.mp4" type="video/mp4">
+  </video>
+  <video id="rowTwomiddleVideo" onClick="onClick_crying_vid05()" preload="auto" muted="muted" autoplay="autoplay" loop="loop" >
+    <source src="videos/interstellar.mp4" type="video/mp4">
+  </video>
+  <video id="rowTworightVideo" onClick="onClick_crying_vid06()" preload="auto" muted="muted" autoplay="autoplay" loop="loop" >
+    <source src="videos/mayDies.mp4" type="video/mp4">
+  </video> 	
+	</div>
+	
+<div class="sideBySide">
+  <video id="rowThreeleftVideo" onClick="onClick_crying_vid07()" preload="auto" muted="muted" autoplay="autoplay" loop="loop" >
+    <source src="videos/safeNow.mp4" type="video/mp4">
+  </video>
+  <video id="rowThreemiddleVideo" onClick="onClick_crying_vid08()" preload="auto" muted="muted" autoplay="autoplay" loop="loop" >
+    <source src="videos/iWontCryForYou.mp4" type="video/mp4">
+  </video>
+  <video id="rowThreerightVideo" onClick="onClick_crying_vid09()" preload="auto" muted="muted" autoplay="autoplay" loop="loop" >
+    <source src="videos/missYouJenny.mp4" type="video/mp4">
+  </video> 	
+	
+	</div>
+	<p class="filmInfo" id="crying_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, delectus cum autem esse dicta, totam placeat voluptatibus pariatur aspernatur, iste consequuntur repellendus fugit tempora.</p>
+
+
+</body>
+
+<script>
+var crying_text = document.getElementById("crying_text");
+
+var crying00 = "How Movies Make Us Feel."
+
+var crying01 = "In this scene from The Lord of the Rings: The Return of the King, Gollum deceives Frodo into thinking that Sam ate the rest of their bread. Sam attacks Gollum, and Frodo, being corrupted by the ring he's been carrying, mistakenly sides with Gollum, telling Sam to go home. The parting of Sam and Frodo hits home to our shared desire for intimacy and friendship as humans, which also involves trust. We truly feel Sam’s heart break in this moment because we know that Frodo is being misguided in his decision to let Sam go. The close-up shots and the riser in the soundtrack makes Frodo's decision even more surprising and heartbreaking to the audience."
+
+var crying02 = "In this scene from Good Will Hunting, Will reveals to his therapist the abuse that he experienced as a child. “It’s not your fault” coming from Will’s therapist strikes something within us all because of our desire to be understood and cared for. Will, having self-destructive tendencies, struggles to accept the reality that it is not his fault until he can't help but burst into tears. The soft words coming from the therapist paired with Will's intimate sobbing crafts a heart-wrenching moment for the audience. The lack of non-diegetic sound and sole use of diegetic audio makes this moment seem even more real and like it's happening right in front of our eyes."
+
+var crying03 = "In this scene from The Patriot, Benjamin Martin's son, Gabriel, is taken captive by the British for spying during the Revolutionary War. As the British are carrying Gabriel away from his family, his younger brother, Thomas, courageously runs after him in an attempt to free him. Thomas is shot by the British Colonel, Gabriel is still in the hands of the British, and Benjamin runs to his dying son, Thomas. When Thomas dies so quickly, we as viewers are struck with the thought of losing someone so dearly close to us in a moment’s notice. We put ourselves in the shoes of those in the movie and begin to feel what they feel. The long gaze into the eyes of Benjamin Martin gives the viewer time to make out what he is feeling. The bell ringing in the background and the British moving on as if nothing happened increases the sorrow."
+
+var crying04 = "In this movie, The Pursuit of Happyness, Will Smith's character, Christopher Gardner, struggles with homelessness while trying to raise his son. After training at a brokerage in hopes to become a stockbroker, he fears that he will not get the job. When he shows up on his last day of training, he predicts that they will turn him down for the job. He wears a suit and tie for his last day but they tell him to wear one tomorrow for his official first day. Christopher humbly accepts the job position while trying to contain his emotions resulting from the long and difficult journey he's endured thus far. The handheld camera look and the shallow focus gives us more insight on the mix of emotions that he is feeling internally. Though not everyone around him knows what he's been through, the audience knows and feels for him."
+
+var crying05 = "In Interstellar, Matthew McConaughey's character, Cooper, is on a mission to find a habitable planet as Earth becomes uninhabitable. While on this mission, time moves differently for him. Every hour spent on this planet, seven years will pass on Earth, which makes it incredibly difficult for Cooper as he has young kids on Earth. In this scene, Cooper receives all the video messages that his kids have been sending him as they've grown up over the years that he's been gone. To imagine watching your kids' lives flash before your eyes as you remain the same age is far from relatable, but Interstellar makes us feel the pain nonetheless. Matthew's performance of mixing the joy from seeing his kids with the deep despair from missing out on their lives is striking, and the slow zoom in on him as we hear the video play in the background rips us apart."
+
+var crying06 = "In this scene from Spider-Man: No Way Home, Peter Parker's aunt, May, dies as a result of the Green Goblin's attack. It is easy to relate to losing someone close to you, especially a parent. Aunt May was like a parent to Peter and was his only family left. Since we know all that Peter has been through and the current trials he's facing, we grieve with him as the passing of his aunt comes to pass. This scene slows down all the chaos happening around them and lets us see into Peter's emotions through a long, close-up shot of his reaction to her death."
+
+var crying07 = "In the movie Captain Phillips, Tom Hanks' character, Captain Phillips, is taken hostage by pirates who overthrew his cargo ship. After five days of being held hostage in a lifeboat, Phillips is rescued by the US Navy. This scene really pulls you in to the point where it all feels so real. The extreme handheld camera movement makes it seem like we are right there with him. Tom Hanks' performance here is spectactular as we get a glimpse into the shock he is experiencing. It is shocking to the viewers as well because of the unexpected burst of emotions from Phillips after all he's been through. The music adds an intensity and a feeling that he is safe, but he is not the same."
+
+var crying08 = "In the movie Magnolia, Tom Cruise's character, Frank Mackey, is sitting beside his dying father. Tom Cruise's performance here is impeccable, but the story takes us deeper into these emotions. Though Frank would not confess that he loved his father and says he won't cry for him, his emotions show his true feelings. This is a feeling we all can relate to in our broken relationships where, yes, there may be hurt, but deep down we have this unbreakable love for them. This long take on Frank takes us through that journey of emotions he is going through, to the point where he can't help but weep uncontrollably."
+
+var crying09 = "The simplicity of this scene from Forrest Gump shows how Forrest was simply speaking the truth from his heart when he said I miss you, Jenny. He missed Jenny and their friendship that they had spent their whole lives building. This simple phrase packs a lot of emotion into it. It is quite saddening to think of losing a lifelong best friend. Forrest's long gaze at her memorial paired with soft, somber music and a great performance makes this scene memorable."
+	
+crying_text.innerHTML = crying00;
+	
+function onClick_crying_vid01(){
+	crying_text.innerHTML = crying01;
+}
+	
+function onClick_crying_vid02(){
+	crying_text.innerHTML = crying02;
+}	
+	
+function onClick_crying_vid03(){
+	crying_text.innerHTML = crying03;
+}	
+	
+function onClick_crying_vid04(){
+	crying_text.innerHTML = crying04;
+}	
+	
+function onClick_crying_vid05(){
+	crying_text.innerHTML = crying05;
+}
+	
+function onClick_crying_vid06(){
+	crying_text.innerHTML = crying06;
+}
+	
+function onClick_crying_vid07(){
+	crying_text.innerHTML = crying07;
+}
+	
+function onClick_crying_vid08(){
+	crying_text.innerHTML = crying08;
+}
+	
+function onClick_crying_vid09(){
+	crying_text.innerHTML = crying09;
+}
+	
+	</script>
+
+</html>

@@ -1,0 +1,14 @@
+@charset "utf-8";
+.sideBySide {
+    display: flex;
+    width: auto;
+}
+.filmInfo {
+    max-width: 1200px;
+    border-style: solid;
+}
+video {
+    width: auto;
+    height: 250px;
+
+}
